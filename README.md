@@ -27,6 +27,8 @@ It is widely used in communication interfaces, data buffering, and asynchronous 
     - rd_en : Read enable
     - rd_data: Data output from FIFO
     - empty : FIFO is empty (read not allowed)
+## Verification Plan
+![image](https://github.com/user-attachments/assets/9e9b003c-f5e2-49ba-98c1-f970b7443c10)
 ## Verification Environment
 1. Testbench: Drives stimulus to FIFO and monitors output.
 2. Assertions: Ensures protocol correctness (e.g., no write when full, no read when empty).
