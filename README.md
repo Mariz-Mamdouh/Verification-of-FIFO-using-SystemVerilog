@@ -6,9 +6,9 @@ It is widely used in communication interfaces, data buffering, and asynchronous 
 1. Sequential Access: Data is read in the same order it was written — no random access.
 2. Producer-Consumer Decoupling: Write and read operations are independent, often using separate clocks in asynchronous FIFOs.
 3. Flow Control Signals: FIFO generates flags like:
-- full: No more space to write
-- empty: No data to read
-- almost_full, almost_empty: Warn about nearing limits
+    - full: No more space to write
+    - empty: No data to read
+    - almost_full, almost_empty: Warn about nearing limits
 4. Backpressure Support: Prevents data loss when the receiver can't process data as quickly as the sender provides it.
 ## Basic FIFO Components
 1. Memory Array:	Stores data entries of fixed width and depth.
@@ -18,15 +18,15 @@ It is widely used in communication interfaces, data buffering, and asynchronous 
 5. Control Logic:	Manages write/read access, overflow/underflow detection, and flag generation.
 ## Typical FIFO Interface
 1. Write Side:
-- wr_clk : Write clock
-- wr_en : Write enable
-- wr_data: Data input to FIFO
-- full : FIFO is full (write not allowed)
+    - wr_clk : Write clock
+    - wr_en : Write enable
+    - wr_data: Data input to FIFO
+    - full : FIFO is full (write not allowed)
 2. Read Side:
-- rd_clk : Read clock
-- rd_en : Read enable
-- rd_data: Data output from FIFO
-- empty : FIFO is empty (read not allowed)
+    - rd_clk : Read clock
+    - rd_en : Read enable
+    - rd_data: Data output from FIFO
+    - empty : FIFO is empty (read not allowed)
 ## Verification Environment
 1. Testbench: Drives stimulus to FIFO and monitors output.
 2. Assertions: Ensures protocol correctness (e.g., no write when full, no read when empty).
