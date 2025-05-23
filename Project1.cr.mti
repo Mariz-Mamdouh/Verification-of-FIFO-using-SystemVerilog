@@ -1,0 +1,55 @@
+{D:/Digital Verification Diploma/Project1/shared_pkg.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/Digital Verification Diploma/Project1/shared_pkg.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package shared_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/Digital Verification Diploma/Project1/FIFO_sb.sv} {0 {vlog -work work -vopt -sv -stats=none {D:/Digital Verification Diploma/Project1/FIFO_sb.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package FIFO_sb_pkg
+-- Importing package FIFO_transaction_pkg
+-- Importing package shared_pkg
+** Error (suppressible): D:/Digital Verification Diploma/Project1/FIFO_sb.sv(39): (vlog-7027) The name ('fifo_if.rd_en') was not found in the current scope.  Please verify the spelling of the name 'fifo_if.rd_en'.
+** Error (suppressible): D:/Digital Verification Diploma/Project1/FIFO_sb.sv(39): (vlog-7027) The name ('fifo_if.wr_en') was not found in the current scope.  Please verify the spelling of the name 'fifo_if.wr_en'.
+** Error (suppressible): D:/Digital Verification Diploma/Project1/FIFO_sb.sv(45): (vlog-7027) The name ('fifo_if.FIFO_DEPTH') was not found in the current scope.  Please verify the spelling of the name 'fifo_if.FIFO_DEPTH'.
+** Error (suppressible): D:/Digital Verification Diploma/Project1/FIFO_sb.sv(46): (vlog-7027) The name ('fifo_if.data_in') was not found in the current scope.  Please verify the spelling of the name 'fifo_if.data_in'.
+
+} {} {}} {D:/Digital Verification Diploma/Project1/FIFO_transaction.sv} {2 {vlog -work work -vopt -sv -stats=none {D:/Digital Verification Diploma/Project1/FIFO_transaction.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+** Warning: D:/Digital Verification Diploma/Project1/FIFO_transaction.sv(1): (vlog-13233) Design unit "FIFO_transaction_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+-- Compiling package FIFO_transaction_sv_unit
+-- Importing package shared_pkg
+-- Compiling package FIFO_transaction_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/Digital Verification Diploma/Project1/FIFO_mon.sv} {2 {vlog -work work -vopt -sv -stats=none {D:/Digital Verification Diploma/Project1/FIFO_mon.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+** Warning: D:/Digital Verification Diploma/Project1/FIFO_mon.sv(1): (vlog-13233) Design unit "FIFO_mon_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+-- Compiling package FIFO_mon_sv_unit
+-- Importing package FIFO_transaction_pkg
+-- Importing package FIFO_sb_pkg
+-- Importing package shared_pkg
+-- Importing package FIFO_cvg_pkg
+-- Compiling module FIFO_monitor
+
+Top level modules:
+	FIFO_monitor
+
+} {} {}} {D:/Digital Verification Diploma/Project1/FIFO_if.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/Digital Verification Diploma/Project1/FIFO_if.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling interface FIFO_if
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/Digital Verification Diploma/Project1/FIFO_top.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/Digital Verification Diploma/Project1/FIFO_top.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module FIFO_top
+
+Top level modules:
+	FIFO_top
+
+} {} {}}
